@@ -3,7 +3,6 @@ package io.github.ennuil.ok_zoomer.config;
 import java.util.List;
 
 import org.quiltmc.config.api.values.TrackedValue;
-import org.quiltmc.loader.api.config.QuiltConfig;
 
 import io.github.ennuil.libzoomer.api.MouseModifier;
 import io.github.ennuil.libzoomer.api.modifiers.CinematicCameraMouseModifier;
@@ -22,10 +21,11 @@ import io.github.ennuil.ok_zoomer.zoom.LinearTransitionMode;
 import io.github.ennuil.ok_zoomer.zoom.MultipliedCinematicCameraMouseModifier;
 import io.github.ennuil.ok_zoomer.zoom.ZoomerZoomOverlay;
 import net.minecraft.util.Identifier;
+import xyz.xdmatthewbx.fabricated_quilt_config.FabricatedQuiltConfig;
 
 @SuppressWarnings("unchecked")
 public class OkZoomerConfigManager {
-	public static final OkZoomerConfig CONFIG = QuiltConfig.create("ok_zoomer", "config", OkZoomerConfig.class);
+	public static final OkZoomerConfig CONFIG = FabricatedQuiltConfig.create("ok_zoomer", "config", OkZoomerConfig.class);
 
 	// Features
 	public static final TrackedValue<CinematicCameraOptions> CINEMATIC_CAMERA = (TrackedValue<CinematicCameraOptions>) CONFIG.getValue(List.of("features", "cinematic_camera"));

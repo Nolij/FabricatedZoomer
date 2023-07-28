@@ -2,8 +2,6 @@ package io.github.ennuil.ok_zoomer.utils;
 
 import com.mojang.blaze3d.platform.InputUtil;
 
-import org.quiltmc.qsl.tag.api.QuiltTagKey;
-import org.quiltmc.qsl.tag.api.TagType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,7 +34,7 @@ public class ZoomUtils {
 		null
 	);
 
-	public static final TagKey<Item> ZOOM_DEPENDENCIES_TAG = QuiltTagKey.of(RegistryKeys.ITEM, new Identifier("ok_zoomer", "zoom_dependencies"), TagType.CLIENT_FALLBACK);
+	public static final TagKey<Item> ZOOM_DEPENDENCIES_TAG = TagKey.of(RegistryKeys.ITEM, new Identifier("ok_zoomer", "zoom_dependencies"));
 
 	public static int zoomStep = 0;
 

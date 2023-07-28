@@ -1,6 +1,6 @@
 package io.github.ennuil.ok_zoomer.events;
 
-import org.quiltmc.qsl.lifecycle.api.client.event.ClientTickEvents;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 
 import io.github.ennuil.ok_zoomer.config.OkZoomerConfigManager;
 import io.github.ennuil.ok_zoomer.config.ConfigEnums.ZoomModes;
@@ -11,7 +11,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.sound.SoundEvents;
 
 // This event is responsible for managing the zoom signal.
-public class ManageZoomEvent implements ClientTickEvents.End {
+public class ManageZoomEvent implements ClientTickEvents.EndTick {
 	// Used internally in order to make zoom toggling possible
 	private static boolean lastZooming = false;
 
@@ -19,7 +19,7 @@ public class ManageZoomEvent implements ClientTickEvents.End {
 	private static boolean persistentZoom = false;
 
 	@Override
-	public void endClientTick(MinecraftClient client) {
+	public void onEndTick(MinecraftClient client) {
 		// We need the player for spyglass shenanigans
 		if (client.player == null) return;
 

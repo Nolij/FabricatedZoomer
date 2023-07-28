@@ -1,21 +1,17 @@
 <img src="./src/main/resources/assets/ok_zoomer/icon.png" align="right" width="128px" alt="Ok Zoomer icon"/>
 
-# Ok Zoomer
+# Fabricated Zoomer
 
-Ok Zoomer is a mod that adds a highly configurable zoom packed with tons of features!
-
-By default, an unique take on zooming is provided, however, by configuring this mod through Mod Menu or a file, the zoom can be adapted for your own purposes! Here's an example: want a cinematic camera while zooming? Enable it! Want to have a better control over it? Toggle it to the Multiplied mode and adjust the multiplier! Do you hate it but still want some grip on the zoom? Enable "Reduce Sensitivity"! On this mod, you are in charge of the zoom!
-
-For more information, see the [Modrinth page](https://modrinth.com/mod/ok-zoomer) or the [CurseForge one](https://www.curseforge.com/minecraft/mc-mods/ok-zoomer)
+This is a fork of [EnnuiL](https://github.com/EnnuiL)'s [Ok Zoomer](https://github.com/EnnuiL/OkZoomer). It is meant to be a bug-for-bug port that simply allows this mod to work on Fabric loader as it originally did, and removes the "PMW" protest screen as it isn't needed anymore. I created this with no ill intent, I simply don't want to use Quilt Loader and I haven't found a good enough alternative to Ok Zoomer that supports Fabric.
 
 ## Download
 
-This mod is available for download on the following services:
+I currently have not published this mod to CurseForge or Modrinth as I do not want to make profit from this, and if I ever do, [EnnuiL](https://github.com/EnnuiL) is free to reach out and request any monetization money the mod page(s) accumulate (which I will not be cashing out). Send donations to [EnnuiL](https://github.com/EnnuiL). This is her mod.
 
-- [Modrinth (recommended)](https://modrinth.com/mod/ok-zoomer)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ok-zoomer)
-- [GitHub Releases (alternative)](https://github.com/EnnuiL/OkZoomer/releases)
+Please only use this mod on the Fabric Loader. It did technically work on the Quilt Loader in my testing, but as this is a bug-for-bug port you really should just use the upstream version.
+
+Currently, I do not have access to a Maven, so GitHub Actions isn't capable of using the [Fabricated LibZoomer](https://github.com/Nolij/Fabricated-LibZoomer) dependency. As such, for the time being, you will have to build this mod for yourself if you wish to use it, as I don't care to manually create releases.
 
 ## License
 
-This mod is licensed under the MIT license. You can freely include the mod on any modpack with no permission. Usage of this mod's code on other projects is allowed as long as attribution is given.
+See [LICENSE](LICENSE).

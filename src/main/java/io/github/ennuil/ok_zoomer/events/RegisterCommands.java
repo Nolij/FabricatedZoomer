@@ -2,17 +2,16 @@ package io.github.ennuil.ok_zoomer.events;
 
 import com.mojang.brigadier.CommandDispatcher;
 
-import org.quiltmc.qsl.command.api.client.ClientCommandManager;
-import org.quiltmc.qsl.command.api.client.ClientCommandRegistrationCallback;
-import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
+import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 
 import io.github.ennuil.ok_zoomer.utils.ZoomUtils;
 import net.minecraft.command.CommandBuildContext;
-import net.minecraft.server.command.CommandManager.RegistrationEnvironment;
 
 public class RegisterCommands implements ClientCommandRegistrationCallback {
 	@Override
-	public void registerCommands(CommandDispatcher<QuiltClientCommandSource> dispatcher, CommandBuildContext buildContext, RegistrationEnvironment environment) {
+	public void register(CommandDispatcher<FabricClientCommandSource> dispatcher, CommandBuildContext buildContext) {
 		dispatcher.register(
 			ClientCommandManager.literal("ok_zoomer").executes(ctx -> {
 				ZoomUtils.setOpenCommandScreen(true);

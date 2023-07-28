@@ -1,7 +1,5 @@
 package io.github.ennuil.ok_zoomer.config.screen.widgets;
 
-import com.mojang.blaze3d.systems.RenderSystem;
-
 import dev.lambdaurora.spruceui.background.Background;
 import dev.lambdaurora.spruceui.widget.SpruceWidget;
 import dev.lambdaurora.spruceui.widget.container.SpruceEntryListWidget;

@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ok_zoomer",
+	"version": "${version}",
+	"name": "Fabricated Zoomer",
+	"description": "Adds a highly configurable zoom button. By default, this mod provides its own take on zooming, however, with configuration, you can drastically change the zoom with something more familiar or useful. The zoom is yours!",
+	"authors": ["EnnuiL", "Nolij", "embeddedt"],
+	"contact": {
+		"homepage": "https://github.com/Nolij/FabricatedZoomer",
+		"issues": "https://github.com/Nolij/FabricatedZoomer/issues",
+		"sources": "https://github.com/Nolij/FabricatedZoomer"
+	},
+	"license": "OSL-3.0",
+	"icon": "assets/ok_zoomer/icon.png",
+	"environment": "client",
+	"depends": {
+		"fabricloader": ">=0.14.10",
+		"minecraft": "1.20.x",
+		"fabric": "*",
+		"libzoomer": ">=0.7.0"
+	},
+	"breaks": {
+		"quilt_loader": "*"
+	},
+	"entrypoints": {
+		"client": [
+			"io.github.ennuil.ok_zoomer.OkZoomerClientMod"
+		],
+		"modmenu": [
+			"io.github.ennuil.ok_zoomer.config.modmenu.OkZoomerModMenuEntry"
+		],
+		"prelaunch": [
+			"io.github.ennuil.ok_zoomer.OkZoomerPreLaunchMod"
+		]
+	},
+	"mixins": ["ok_zoomer.mixins.json"]
+}
