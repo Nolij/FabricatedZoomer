@@ -6,11 +6,9 @@ This is a fork of [EnnuiL](https://github.com/EnnuiL)'s [Ok Zoomer](https://gith
 
 ## Download
 
-I currently have not published this mod to CurseForge or Modrinth as I do not want to make profit from this, and if I ever do, [EnnuiL](https://github.com/EnnuiL) is free to reach out and request any monetization money the mod page(s) accumulate (which I will not be cashing out). Send donations to [EnnuiL](https://github.com/EnnuiL). This is her mod.
+This mod is available for download on [CurseForge](https://legacy.curseforge.com/minecraft/mc-mods/fabricated-zoomer) (where [EnnuiL](https://github.com/EnnuiL) receives 100% of monetization earnings).
 
-Please only use this mod on the Fabric Loader. It did technically work on the Quilt Loader in my testing, but as this is a bug-for-bug port you really should just use the upstream version.
-
-Currently, I do not have access to a Maven, so GitHub Actions isn't capable of using the [Fabricated LibZoomer](https://github.com/Nolij/Fabricated-LibZoomer) dependency. As such, for the time being, you will have to build this mod for yourself if you wish to use it, as I don't care to manually create releases.
+If you wish to build this mod for yourself, you will also need to build the [Fabricated LibZoomer](https://github.com/Nolij/Fabricated-LibZoomer) dependency and publish it to your local maven.
 
 ## License
 
